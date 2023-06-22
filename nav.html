@@ -19,9 +19,22 @@
     float: left;
     padding: 6px 20px;
     margin: 5px;
+
 }
 .navbar ul{
     overflow: auto;
+}
+.navbar li :hover{
+    background-color: rgba(237, 233, 14, 0.944);
+    
+}
+#search{
+    display: inline-block;
+    float: right;
+    margin: 9px;
+    width: 150px;
+    border-radius: 15px;
+}
 }
     </style>
 </head>
@@ -33,7 +46,10 @@
         <li><a href="#">Menu</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Contact Us</a></li>
-    </ul>
+   
+    <div class="search">
+        <input type="text" name="search" id="search" placeholder="search here..">
+    </div> </ul>
 </nav>
     </header>
     
