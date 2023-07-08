@@ -7,16 +7,28 @@
     <style>
         .container{
 
-            background-color: grey;
+            background-color: black;
             text-align: center;
-            font-size: 50px;
+            font-size: 30px;
             font-weight: bold;
+            border: 2px solid black;
+            border-radius:80px;
+            padding: 20px;
+            color: rgb(255, 217, 0);
+
+        }
+        #h1{
+            text-align: center;
+            font-size: 40px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+
         }
     </style>
 </head>
 <body>
     <div class="container">
-clock : <span id="time"></span>
+<h1 id="h1">Clock</h1> <span id="time"></span>
     </div>
 
 
@@ -27,14 +39,6 @@ let now = new Date();
       let minutes = now.getMinutes();
       let seconds = now.getSeconds();
 
- 
-
-function convertTo12HourFormat(hours) {
-    let suffix = hours >= 12 ? "PM" : "AM";
-    hours = hours % 12;
-    hours = hours ? hours : 12;
-    return hours + suffix;
-  };
   setInterval (updateTime,1000);
  
 function updateTime() {
